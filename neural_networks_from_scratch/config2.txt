@@ -1,0 +1,7 @@
+GLOBALS
+loss: mse,lrate: 0.08,wreg: 0.001, wrt: L2, minibatchsize:1, epochs:90, verbos:1
+LAYERS
+input: 800
+type: none
+GENERATOR
+count:500, height:20, width:20, ndim:20, noise:3, train:70, valid:20, test:10

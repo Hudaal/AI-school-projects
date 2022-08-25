@@ -1,0 +1,4 @@
+GLOBALS
+episodes: 201,max_T: 300,critic_t: 1, critic_n: 0, layers:(5;1), lr_c_n:0.001, lr_c_t:0.0001, lr_a:0.09, decay_a:0.7, decay_c:0.7, discount_a:0.7, discount_c:0.7, epsilon:0.001, decay_e: 0.00001, display:1
+Hanoi
+pegs:3, discs:4, play:1

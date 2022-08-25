@@ -1,0 +1,4 @@
+GLOBALS
+episodes: 250,max_T: 300,critic_t: 0, critic_n: 1, layers:(20;20;5), lr_c_n:0.01, lr_c_t:0.001, lr_a:0.09, decay_a:0.5, decay_c:0.7, discount_a:0.5, discount_c:0.7, epsilon:0.01, decay_e: 0.001, display:1
+CartPole
+L: 1.0, mp:0.1, gravity:-9.8, timestep:0.02, play:1

@@ -1,0 +1,12 @@
+GLOBALS
+loss: mse,lrate: 0.08,wreg: 0.001, wrt: L2, minibatchsize:10, epochs:150, verbos:1
+LAYERS
+input: 800
+size: 400, act: sigmoid, wr: (-0.1;0.1), lrate: 0.07
+size: 200, act: sigmoid, wr: (-0.1;0.1), lrate: 0.07
+size: 100, act: sigmoid, wr: (-0.1;0.1), lrate: 0.07
+size: 50, act: sigmoid, wr: (-0.1;0.1), lrate: 0.07
+size: 5, act: relu, wr: (-0.1;0.1), br: 0
+type: none
+GENERATOR
+count:100, height:30, width:30, ndim:30, noise:3, train:70, valid:20, test:10

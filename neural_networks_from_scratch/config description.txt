@@ -1,0 +1,33 @@
+The valid keys in global variables:
+It starts with GLOBAL
+There must be a comma (,) between each key and value
+'loss': The loss function (mse, or cross_entropy)
+'lrate': The global learning rate (a float number)
+'wreg': The regulerization rate (a float number)
+'wrt': The regulerization function (L1 or L2)
+'minibatchsize': The size of minibatches (integer number)
+'epochs': How many times to repeat (integer number)
+'verbos': If 0 it will not print the information and if 1 or any other value it will print
+
+The valid keys in layers part which starts with LAYERS:
+There must be a comma (,) between each key and value
+'input': input dimentions (it must be n*n*minibatch size where n is the dimention of the image)
+'type': This must just be in the last line which means the output layer to inform if there is a softmax output layer (softmax or none)
+'act': The activation function for this layer (sigmoid, relu, linear or tanh)
+'wr': The intervall of the weigths start for this layer (example: (-0.1;0.1) separated by ;)
+lrate: The learning rate for this layer (a float number)
+'br': The start bias for this layer (0 or 1)
+'size': How many neurons in this layer (an integer)
+
+The valid keys in images generator part which starts with GENERATOR:
+There must be a comma (,) between each key and value
+'count': How many images to be generated ( an integer)
+'height': The image height (an integer)
+'width': The image width (an integer)
+'ndim': The image dimention size n (an integer)
+	height and width of the image must be lower than ndim
+'noise': The number of pixels with noise in the image (an integer)
+'test': The test set persentage of the whole set (an integer between 0 and 100)
+'valid': The validation set persentage of the whole set (an integer between 0 and 100)
+'train': The training set persentage of the whole set (an integer between 0 and 100)
+

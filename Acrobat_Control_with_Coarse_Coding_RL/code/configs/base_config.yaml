@@ -1,0 +1,30 @@
+environment_type: Acrobat # {CartPole, TowersOfHanoi, Gambler}
+environment_params: # Parameters used by the specified environment (passed in constructor to environment
+  bins: [[10,10,10,10], [10,10,10,10], [10,10,10,10], [10,10,10,10]]
+  m_1: 1.0
+  m_2: 1.0
+  L_1: 1.0
+  L_2: 1.0
+  L_c1: 0.5
+  L_c2: 0.5
+  g: 9.81
+  timestep: 0.05
+  no_tiles: 4
+  n_collected_timesteps: 4
+  n_timesteps: 2000
+  store_states: True
+critic_type: NetworkCritic # {NetworkCritic}
+critic_params:
+  layer_sizes: [512,256,128,32]
+  discount: 0.99 # Discount factor.
+  learning_rate: 1e-3 # Learning rate at start of fit.
+fit:
+  n_episodes: 500 # Number of episodes to fit actor/critic for.
+  initial_eps: 1
+  eps_decay: 0.99
+  buffer_size: 2000
+  batch_size: 500
+visualization:
+  show: True # Whether to visualize plots and game after training.
+  vis_sleep: 1.0 # Number of seconds to wait between each frame when visualizing (if needed).
+

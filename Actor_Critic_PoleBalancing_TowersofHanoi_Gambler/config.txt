@@ -1,0 +1,8 @@
+GLOBALS
+episodes: 100,max_T: 100,critic_t: 0, critic_n: 1, layers:(5;1), lr_c_n:0.01, lr_c_t:0.01, lr_a:0.03, decay_a:0.4, decay_c:0.9, discount_a:0.4, discount_c:0.9, epsilon:0.1, decay_e: 0.001, display:1
+CartPole
+L: 1.0, mp:0.5, gravity:-9.8, timestep:0.01, play:0
+Hanoi
+pegs:3, discs:2, play:0
+Gambler
+pw: 0.4, play:1
